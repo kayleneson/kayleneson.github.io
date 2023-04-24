@@ -1,0 +1,128 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Inter, sans-serif;
+}
+
+/* First view */
+#view1 {
+	background-color: #FFFFFF;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.large-text {
+	font-size: 10rem;
+	font-weight: bold;
+	line-height: 1;
+}
+
+.blue-text {
+	color: #0000FF;
+    font-size: 10rem;
+	font-weight: bold;
+	line-height: 1;
+}
+/* First view */
+#view1 {
+    background-color: #FFFFFF;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.large-text {
+    font-size: 10rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.blue-text {
+    color: #0000FF;
+    font-size: 10rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+/* Typewriter effect */
+.typewriter {
+    display: inline-block;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid #000000; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .02em; /* Adjust as needed */
+    animation:
+      typing 3.5s steps(30, end),
+      blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #000000; }
+}
+
+/* Animation delay */
+.typewriter {
+    animation-delay: 1s;
+}
+
+/* Second view */
+#view2 {
+	background-color: #ffffff;
+}
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
+}
+
+.gallery-img {
+	max-width: 100%;
+	height: auto;
+	object-fit: cover;
+	cursor: pointer;
+	transition: transform 0.2s ease-in-out;
+}
+
+.gallery-img:hover {
+	transform: scale(1.1);
+}
+.welcome-text {color: #0000FF;
+    font-size: 1rem;
+	font-weight: regular;
+    text-align: center;
+    padding: 15px;
+	line-height: 1;}
+
+    .back-btn {
+        display: block;
+        margin: 30px auto;
+        padding: 10px;
+        font-size: 1.5rem;
+        border: none;
+        border-radius: 5px;
+        background-color: #0000FF;
+        color: #FFFFFF;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+      
+      .back-btn:hover {
+        background-color: #3333FF;
+      }
+      
